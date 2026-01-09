@@ -10,7 +10,7 @@ Currículum profesional como **QA Software / Analista de Calidad**.
 5. Guardar
 
 Tu CV quedará visible como:
-https://TU-USUARIO.github.io/CV-QA/
+https://github.com/edgardyh/CV-QA/
 
 ## 🧪 Tecnologías
 - HTML
