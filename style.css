@@ -198,49 +198,59 @@ body.dark .card h3 {
 .download-btn:hover {
   opacity: 0.85;
 }
-
-/* ACCIONES SUPERIORES */
-.top-actions {
+/* ===== BARRA SUPERIOR FIJA ===== */
+.top-bar {
   position: fixed;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
   display: flex;
-  gap: 12px;
-  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  border-bottom: 1px solid #e0e0e0;
 }
 
-/* BOTÓN TEMA */
-#themeToggle {
-  align:center;
+/* CONTENEDOR DE BOTONES */
+.top-actions {
+  display: flex;
+  gap: 14px;
+}
+
+/* BOTONES UNIFICADOS */
+.top-actions button,
+.top-actions a {
+  min-width: 160px;
+  height: 36px;
   background: #f4c430;
   color: #000;
   border: none;
-  padding: 8px 16px;
-  border-radius: 20px;
-  cursor: pointer;
+  border-radius: 999px;
   font-size: 13px;
   font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* BOTÓN PDF */
-.download-btn {
-  align:center;
+.top-actions a {
   background: #000;
   color: #fff;
-  padding: 8px 16px;
-  border-radius: 20px;
-  text-decoration: none;
-  font-size: 13px;
-  font-weight: 600;
 }
 
-#themeToggle:hover,
-.download-btn:hover {
+/* HOVER */
+.top-actions button:hover,
+.top-actions a:hover {
   opacity: 0.85;
 }
 
+/* ESPACIO PARA QUE NO TAPE EL CV */
 .cv {
-  margin-top: 80px;
+  margin-top: 96px;
 }
-
