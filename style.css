@@ -8,11 +8,12 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background: #e5e5e5;
+  background: #e6e6e6;
+  color: #222;
 }
 
 /* =====================================================
-   BARRA SUPERIOR FIJA
+   BARRA SUPERIOR
 ===================================================== */
 .top-bar {
   position: fixed;
@@ -20,13 +21,13 @@ body {
   left: 0;
   width: 100%;
   height: 64px;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255,255,255,0.9);
   backdrop-filter: blur(8px);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 3000;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #ddd;
 }
 
 .top-actions {
@@ -55,13 +56,8 @@ body {
 }
 
 .top-actions a {
-  background: #000;
+  background: #111;
   color: #fff;
-}
-
-.top-actions button:hover,
-.top-actions a:hover {
-  opacity: 0.85;
 }
 
 /* =====================================================
@@ -69,24 +65,26 @@ body {
 ===================================================== */
 .cv {
   display: flex;
-  max-width: 1000px;
+  max-width: 1050px;
   margin: 96px auto 40px;
   background: #fff;
-  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  box-shadow: 0 12px 30px rgba(0,0,0,.12);
 }
 
 /* =====================================================
-   SIDEBAR
+   SIDEBAR (COMO LA IMAGEN)
 ===================================================== */
 .sidebar {
-  width: 300px;
-  background: #f5f5f5;
-  padding: 30px;
+  width: 320px;
+  background: #2b2b2b;
+  color: #eee;
+  padding: 35px 30px;
 }
 
 .sidebar h1 {
   font-size: 26px;
-  margin-bottom: 0;
+  margin: 15px 0 5px;
+  line-height: 1.2;
 }
 
 .sidebar h1 span {
@@ -94,10 +92,14 @@ body {
 }
 
 .sidebar h2 {
-  font-size: 16px;
-  font-weight: 400;
-  color: #555;
-  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #f4c430;
+  background: #1f1f1f;
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-bottom: 25px;
 }
 
 .sidebar section {
@@ -105,46 +107,47 @@ body {
 }
 
 .sidebar h3 {
-  font-size: 14px;
-  border-bottom: 2px solid #f4c430;
-  display: inline-block;
-  margin-bottom: 10px;
+  font-size: 13px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-left: 4px solid #f4c430;
+  padding-left: 8px;
 }
 
 /* =====================================================
    FOTO PERFIL
 ===================================================== */
 .photo {
-  width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .photo img {
-  width: 160px;
-  height: 160px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
-  border-radius: 50%;
-  border: 4px solid #f4c430;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
 
 /* =====================================================
-   SKILLS
+   SKILLS (BARRAS COMO LA IMAGEN)
 ===================================================== */
 .skill {
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 
 .skill span {
   font-size: 13px;
+  display: block;
+  margin-bottom: 5px;
 }
 
 .bar {
   height: 6px;
-  background: #ddd;
-  margin-top: 4px;
+  background: #444;
   position: relative;
 }
 
@@ -158,43 +161,110 @@ body {
 }
 
 .bar.full::after { width: 100%; }
-.bar.mid::after  { width: 70%; }
-.bar.low::after  { width: 40%; }
+.bar.mid::after { width: 70%; }
+.bar.low::after { width: 40%; }
 
-/* ===== MEJORAR LEGIBILIDAD EXPERIENCIA ===== */
+/* =====================================================
+   CONTENIDO PRINCIPAL (CARDS)
+===================================================== */
+.content {
+  flex: 1;
+  padding: 40px;
+  background: #f5f5f5;
+}
+
+.card {
+  background: #fff;
+  padding: 25px 28px;
+  margin-bottom: 25px;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #222;
+  font-size: 18px;
+  position: relative;
+}
+
+.card h3::after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background: #f4c430;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+}
+
+/* =====================================================
+   EXPERIENCIA
+===================================================== */
 .job {
-  margin-bottom: 32px;
+  margin-top: 18px;
 }
 
 .job h4 {
-  margin: 0 0 6px 0;
-  line-height: 1.35;
+  margin: 0;
+  font-size: 15px;
 }
 
 .job span {
   display: block;
-  margin-bottom: 10px;
   font-size: 12px;
   color: #777;
-  line-height: 1.4;
+  margin: 4px 0 10px;
 }
 
 .job p {
   margin: 0;
-  line-height: 1.65;
-}
-
-/* ===== MEJOR LECTURA GENERAL ===== */
-.card {
-  padding-bottom: 10px;
-}
-
-.content p {
-  margin-top: 0;
-  margin-bottom: 12px;
   line-height: 1.6;
 }
 
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+@media (max-width: 900px) {
+  .cv {
+    flex-direction: column;
+  }
 
+  .sidebar {
+    width: 100%;
+    text-align: center;
+  }
 
-/* ============================*
+  .sidebar h3 {
+    border-left: none;
+    border-bottom: 2px solid #f4c430;
+    display: inline-block;
+    padding-bottom: 4px;
+  }
+}
+
+/* =====================================================
+   MODO OSCURO (COHERENTE)
+===================================================== */
+body.dark {
+  background: #111;
+}
+
+body.dark .content {
+  background: #181818;
+}
+
+body.dark .card {
+  background: #222;
+  color: #eee;
+}
+
+body.dark .card h3 {
+  color: #fff;
+}
+
+body.dark .top-bar {
+  background: rgba(20,20,20,0.9);
+  border-bottom-color: #333;
+}
