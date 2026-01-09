@@ -4,111 +4,89 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Edgar David Yépez | QA Software</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <div class="layout">
+<div class="cv">
 
-    <!-- SIDEBAR -->
-    <aside class="sidebar">
-      <h1>Edgar David<br><span>Yépez</span></h1>
-      <h2>QA Software</h2>
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="photo">
+      <!-- Opcional: agrega tu foto -->
+      <!-- <img src="foto.jpg" alt="Foto Edgar"> -->
+    </div>
 
-      <div class="block">
-        <h3>Contacto</h3>
-        <p>📍 Soledad, Atlántico</p>
-        <p>📧 edgardatainfo@gmail.com</p>
-        <p>
-          🔗 <a href="https://linkedin.com/in/edgardyh97" target="_blank">
-            linkedin.com/in/edgardyh97
-          </a>
-        </p>
+    <h1>Edgar David<br><span>Yépez</span></h1>
+    <h2>QA Software</h2>
+
+    <section>
+      <h3>Contacto</h3>
+      <p>📍 Soledad, Atlántico</p>
+      <p>📧 edgardatainfo@gmail.com</p>
+      <p>🔗 linkedin.com/in/edgardyh97</p>
+    </section>
+
+    <section>
+      <h3>Educación</h3>
+      <p><strong>Ingeniería de Sistemas</strong><br>Univ. Simón Bolívar</p>
+      <p><strong>Técnico en Sistemas</strong><br>SENA</p>
+    </section>
+
+    <section>
+      <h3>Habilidades</h3>
+      <div class="skill"><span>QA Manual</span><div class="bar full"></div></div>
+      <div class="skill"><span>Pruebas Funcionales</span><div class="bar full"></div></div>
+      <div class="skill"><span>API Testing</span><div class="bar mid"></div></div>
+      <div class="skill"><span>Automatización</span><div class="bar mid"></div></div>
+      <div class="skill"><span>CI/CD</span><div class="bar low"></div></div>
+    </section>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="content">
+
+    <section class="card">
+      <h3>Perfil</h3>
+      <p>
+        Analista de Calidad de Software con más de 3 años de experiencia en
+        entornos gubernamentales y proyectos de alta criticidad. Enfocado en
+        pruebas funcionales, validación de servicios y prevención de defectos
+        en producción.
+      </p>
+    </section>
+
+    <section class="card">
+      <h3>Experiencia Laboral</h3>
+
+      <div class="job">
+        <h4>Analista de Calidad CAT II – SGTECH</h4>
+        <span>Jun 2024 – Dic 2024</span>
+        <p>Pruebas funcionales e integración en sistemas de alta concurrencia.</p>
       </div>
 
-      <div class="block">
-        <h3>Idiomas</h3>
-        <p>Español: Nativo</p>
-        <p>Inglés: Técnico / Dailys</p>
+      <div class="job">
+        <h4>Analista de Calidad – I4 Digital</h4>
+        <span>Ago 2023 – Nov 2023</span>
+        <p>Diseño de casos de prueba manuales y reporte de defectos.</p>
       </div>
 
-      <div class="block">
-        <h3>Skills QA</h3>
-        <ul class="skills">
-          <li>Pruebas Funcionales</li>
-          <li>QA Manual</li>
-          <li>API Testing</li>
-          <li>Automatización</li>
-          <li>Casos de Prueba</li>
-          <li>Reporte de Bugs</li>
-          <li>CI/CD</li>
-          <li>Microservicios</li>
-          <li>Kubernetes</li>
-        </ul>
+      <div class="job">
+        <h4>Automatizador Funcional – DEVCO</h4>
+        <span>Ago 2021 – Mar 2023</span>
+        <p>Pruebas API, microservicios y soporte a despliegues.</p>
       </div>
-    </aside>
+    </section>
 
-    <!-- MAIN -->
-    <main class="content">
+    <section class="card">
+      <h3>Idiomas</h3>
+      <p>Inglés: Técnico</p>
+      <p>Español: Nativo</p>
+    </section>
 
-      <section class="card">
-        <h3>Perfil Profesional</h3>
-        <p>
-          Analista de Calidad de Software con más de 3 años de experiencia en
-          proyectos gubernamentales y entornos de alta criticidad. Especializado
-          en pruebas funcionales, validación de APIs y aseguramiento de la calidad
-          en sistemas distribuidos. Enfocado en la prevención de defectos,
-          mejora continua y entrega de software confiable.
-        </p>
-      </section>
-
-      <section class="card">
-        <h3>Experiencia Profesional</h3>
-
-        <div class="job">
-          <h4>Analista de Calidad CAT II – SGTECH</h4>
-          <span>Jun 2024 – Dic 2024</span>
-          <ul>
-            <li>Pruebas funcionales en entornos productivos y preproductivos.</li>
-            <li>Validación de integraciones entre servicios.</li>
-            <li>Aseguramiento de calidad en sistemas de alta concurrencia.</li>
-          </ul>
-        </div>
-
-        <div class="job">
-          <h4>Analista de Calidad – I4 Digital</h4>
-          <span>Ago 2023 – Nov 2023</span>
-          <ul>
-            <li>Diseño y ejecución de casos de prueba manuales.</li>
-            <li>Reporte y seguimiento de defectos.</li>
-            <li>Validación de requerimientos y criterios de aceptación.</li>
-          </ul>
-        </div>
-
-        <div class="job">
-          <h4>Automatizador Funcional – DEVCO</h4>
-          <span>Ago 2021 – Mar 2023</span>
-          <ul>
-            <li>Pruebas de APIs REST y flujos de negocio.</li>
-            <li>Validación de microservicios y eventos asíncronos.</li>
-            <li>Soporte a despliegues y análisis de logs.</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="card">
-        <h3>Educación</h3>
-        <ul>
-          <li><strong>Ingeniería de Sistemas</strong> – Universidad Simón Bolívar</li>
-          <li><strong>Técnico en Sistemas</strong> – SENA</li>
-        </ul>
-      </section>
-
-    </main>
-  </div>
+  </main>
+</div>
 
 </body>
 </html>
