@@ -1,4 +1,4 @@
-# CV - Edgar David Yépez de la Hoz
+# CV - Edgar D. Yepez de la Hoz
 
 Currículum profesional como **QA Software / Analista de Calidad**.
 
