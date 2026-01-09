@@ -121,3 +121,51 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
+/* BOTONES */
+.actions {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.actions button {
+  background: #f4c430;
+  color: #000;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.actions button:hover {
+  opacity: 0.85;
+}
+
+/* ===== MODO OSCURO ===== */
+body.dark {
+  background: #121212;
+}
+
+body.dark .cv {
+  background: #1e1e1e;
+}
+
+body.dark .sidebar {
+  background: #1a1a1a;
+  color: #eaeaea;
+}
+
+body.dark .content {
+  color: #eaeaea;
+}
+
+body.dark .card {
+  background: #222;
+}
+
+body.dark .sidebar h3,
+body.dark .card h3 {
+  color: #f4c430;
+}
+
