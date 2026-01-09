@@ -99,8 +99,11 @@
   </div>
 
   <!-- ===== SCRIPT ===== -->
-  <script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
     const toggleBtn = document.getElementById("themeToggle");
+
+    if (!toggleBtn) return;
 
     toggleBtn.addEventListener("click", () => {
       document.body.classList.toggle("dark");
@@ -110,7 +113,9 @@
           ? "☀️ Modo claro"
           : "🌙 Modo oscuro";
     });
-  </script>
+  });
+</script>
+
 
 </body>
 </html>
