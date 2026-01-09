@@ -13,6 +13,9 @@
 
 <div class="actions">
   <button id="themeToggle">🌙 Modo oscuro</button>
+  <a href="Edgar-David-Yepez-QA.pdf" download class="download-btn">
+    ⬇️ Descargar CV (PDF)
+  </a>
 </div>
   <!-- SIDEBAR -->
   <aside class="sidebar">
@@ -97,6 +100,20 @@
 
   </main>
 </div>
+  
+  <script>
+  const toggleBtn = document.getElementById("themeToggle");
+
+  toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+
+    toggleBtn.textContent = 
+      document.body.classList.contains("dark")
+        ? "☀️ Modo claro"
+        : "🌙 Modo oscuro";
+  });
+</script>
+
 
 </body>
 </html>
