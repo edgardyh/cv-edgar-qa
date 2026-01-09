@@ -3,7 +3,7 @@
 Currículum profesional como **QA Software / Analista de Calidad**.
 
 
-## 🚀 Hola, Bienvenido a CV, dale click al enlace 👇
+## 🚀 Hola, Bienvenido a mi CV, dale click al enlace para visualizaar mi background 👇
 https://edgardyh.github.io/cv-edgar-qa/
 
 ## 🧪 Tecnologías
